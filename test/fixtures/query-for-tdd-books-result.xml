@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ISBNdb server_time="2009-08-03T19:46:19Z">
+<BookList total_results="18" page_size="10" page_number="1" shown_results="10">
+<BookData book_id="agile_java" isbn="0131482394" isbn13="9780131482395">
+<Title>Agile Java</Title>
+<TitleLong>Agile Java: crafting code with test-driven development</TitleLong>
+<AuthorsText>Jeff Langr</AuthorsText>
+<PublisherText publisher_id="prentice_hall_ptr">Upper Saddle River, NJ : Prentice Hall PTR, c2005.</PublisherText>
+</BookData>
+<BookData book_id="asp_net_mvc_1_0_test_driven_development_problem_design_solut" isbn="0470447621" isbn13="9780470447628">
+<Title>ASP.NET MVC 1.0 Test Driven Development Problem - Design - Solution</Title>
+<TitleLong></TitleLong>
+<AuthorsText>Emad Ibrahim, </AuthorsText>
+<PublisherText publisher_id="wrox">Wrox</PublisherText>
+</BookData>
+<BookData book_id="a_self_driven_test_methodology_for_built_in_self_test_of_seq" isbn="0612303489" isbn13="9780612303485">
+<Title>A self-driven test methodology for built-in self-test of sequential circuits</Title>
+<TitleLong></TitleLong>
+<AuthorsText></AuthorsText>
+<PublisherText publisher_id="national_library_of_canada_a04">Ottawa : National Library of Canada = Bibliothڲeque nationale du Canada, [1999]</PublisherText>
+</BookData>
+<BookData book_id="defined_mind_vocabulary_accelerator" isbn="0976376709" isbn13="9780976376705">
+<Title>Defined Mind Vocabulary Accelerator</Title>
+<TitleLong>Defined Mind Vocabulary Accelerator: Music-Driven Vocabulary &amp; Comprehension Tools for School/ Test/ SAT Prep</TitleLong>
+<AuthorsText>Keith London, Rebecca Osleeb, </AuthorsText>
+<PublisherText publisher_id="defined_mind_inc">Defined Mind, Inc.</PublisherText>
+</BookData>
+<BookData book_id="interpreting_standardized_test_scores" isbn="1412937191" isbn13="9781412937191">
+<Title>Interpreting Standardized Test Scores</Title>
+<TitleLong>Interpreting Standardized Test Scores: Strategies for Data-Driven Instructional Decision Making</TitleLong>
+<AuthorsText>Craig A. Mertler, </AuthorsText>
+<PublisherText publisher_id="sage_publications_inc">Sage Publications, Inc</PublisherText>
+</BookData>
+<BookData book_id="interpreting_standardized_test_scores_a01" isbn="1412937183" isbn13="9781412937184">
+<Title>Interpreting Standardized Test Scores</Title>
+<TitleLong>Interpreting Standardized Test Scores: Strategies for Data-Driven Instructional Decision Making</TitleLong>
+<AuthorsText>Craig A. Mertler, </AuthorsText>
+<PublisherText publisher_id="sage_publications_inc">Sage Publications, Inc</PublisherText>
+</BookData>
+<BookData book_id="teaching_authentic_language_arts_in_a_test_driven_era" isbn="0415955777" isbn13="9780415955775">
+<Title>Teaching authentic language arts in a test-driven era</Title>
+<TitleLong></TitleLong>
+<AuthorsText>Arthur T. Costigan</AuthorsText>
+<PublisherText publisher_id="routledge">New York : Routledge, 2008.</PublisherText>
+</BookData>
+<BookData book_id="teaching_authentic_language_arts_in_a_test_driven_era_a01" isbn="0415955785" isbn13="9780415955782">
+<Title>Teaching authentic language arts in a test-driven era</Title>
+<TitleLong></TitleLong>
+<AuthorsText>Arthur T. Costigan</AuthorsText>
+<PublisherText publisher_id="routledge">New York : Routledge, 2008.</PublisherText>
+</BookData>
+<BookData book_id="test_driven" isbn="1932394850" isbn13="9781932394856">
+<Title>Test Driven</Title>
+<TitleLong>Test Driven: TDD and Acceptance TDD for Java Developers</TitleLong>
+<AuthorsText>Lasse Koskela, </AuthorsText>
+<PublisherText publisher_id="manning_publications">Manning Publications</PublisherText>
+</BookData>
+<BookData book_id="test_driven_a01" isbn="0807748951" isbn13="9780807748954">
+<Title>Test driven</Title>
+<TitleLong>Test driven: high-stakes accountability in elementary schools</TitleLong>
+<AuthorsText>Linda Valli... [et al.]</AuthorsText>
+<PublisherText publisher_id="teachers_college_press">New York : Teachers College Press, c2008.</PublisherText>
+</BookData>
+</BookList>
+</ISBNdb>
