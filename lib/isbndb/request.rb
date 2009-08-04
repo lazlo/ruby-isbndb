@@ -19,7 +19,13 @@ class BaseRequest
   end
 
   def to_uri
-    URI.parse("#{@scheme}://#{@server}:#{@port}#{@path}?#{@query}")
+    args = {
+      :scheme => @scheme,
+      :host => @server,
+      :port => @port,
+      :path => @path,
+      :query => @query}
+    URI::HTTP.build(args)
   end
 end
 end
