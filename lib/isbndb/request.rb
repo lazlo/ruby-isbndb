@@ -1,3 +1,5 @@
+require 'uri'
+
 module ISBNdb
 class BaseRequest
   DEFAULT_SCHEME = 'http'
@@ -12,6 +14,10 @@ class BaseRequest
     @server = DEFAULT_SERVER
     @port = DEFAULT_PORT
     @file = DEFAULT_FILE
+  end
+
+  def to_uri
+    URI.parse("#{@scheme}://#{@server}:#{@port}#{@file}")
   end
 end
 end
