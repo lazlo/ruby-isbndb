@@ -11,7 +11,7 @@ class TestBaseRequest < Test::Unit::TestCase
     assert( @r.scheme )
     assert( @r.server )
     assert( @r.port )
-    assert( @r.file )
+    assert( @r.path )
   end
 
   def test_default_scheme_is_set
@@ -26,8 +26,8 @@ class TestBaseRequest < Test::Unit::TestCase
     assert_equal( ISBNdb::BaseRequest::DEFAULT_PORT, @r.port )
   end
 
-  def test_default_file_is_set
-    assert_equal( ISBNdb::BaseRequest::DEFAULT_FILE, @r.file )
+  def test_default_path_is_set
+    assert_equal( ISBNdb::BaseRequest::DEFAULT_PATH, @r.path )
   end
 
   def test_defaults_to_uri
