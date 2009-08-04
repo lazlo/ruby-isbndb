@@ -1,0 +1,92 @@
+= ISBNdb
+
+is a simple library written in Ruby for interaction with the {ISBNdb.com}[http://isbndb.com/]
+API over HTTP.
+
+== Description:
+
+The library provides a uniform front-end for building queries and sending
+them over HTTP (sync or async). When the API server returns a result for
+the query, the library turns that result into ruby objects.
+
+== Features:
+
+* build queries and send them to the API (via HTTP GET)
+* parse XML result returned by the API and turn it into ruby objects
+* ...
+* API key management class (planed)
+
+As the API of ISBNdb.com is only available over HTTP by now, this library
+only implements the HTTP version (the API spec speaks of a planed
+XML-RPC one as well).
+
+== Requirements:
+
+* an API access key from ISBNdb.com
+  (requires creation of a account but is free of charge)
+* Ruby but no more than that, since the library only makes us of code
+  from the std library.
+
+== Install:
+
+Fetch the source:
+
+ git clone git://github.com/lazlo/ruby-isbndb.git
+
+Put the content of lib directory into your load path.
+
+== Details:
+
+Since the amount of requests to the API server is limited on a per day
+basis of 2000 requests, and results returned by the server are
+paginated (and so require an additional query) there is a sane default
+value that determines how many pages of the result will be parsed.
+
+As an alternative interactive parsing of the individual pages of the
+result is a potential feature for the future.
+
+For further reading on the ISBNdb.com API
+refer to the specification at http://isbndb.com/docs/api/.
+
+== Examples:
+
+Some examples for using the library:
+
+  require 'isbndb'
+
+  api_key='FFOOBBAARR'
+
+  # Find a book by title (using ISBNdb.find):
+  result = ISBNdb.find("Test-driven",
+    :access_key => api_key)
+  if result.size > 0
+    result.each { |item|
+      puts "Title: #{item.title}"
+      puts "Full Title: #{item.full_title}"
+      puts "Authors: #{item.authors}"
+      puts "ISBN-10: #{item.isbn10}"
+    }
+  end
+
+  # Find a book (by building complex a query):
+  result = ISBNdb.find(:collection => :book,
+    :where => {:title => "Test-driven", :publisher => "Prentice Hall"},
+    :access_key => api_key)
+  if result.size > 0
+    result.each {
+      puts item.title
+      ...
+    }
+  end
+
+== License:
+
+(The MIT License)
+
+Copyright (c) 2009 D. Laszlo Sitzer
+
+== Authors & Contact Information:
+
+Authors: D. Laszlo Sitzer <lazlo@lazlo.de>
+
+The wiki for this project is hosted at http://wiki.github.com/lazlo/ruby-isbndb.
