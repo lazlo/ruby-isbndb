@@ -31,7 +31,7 @@ class TestBaseRequest < Test::Unit::TestCase
   end
 
   def test_defaults_to_uri
-    uri = "http://isbndb.com:80/api/books.xml"
+    uri = "http://isbndb.com/api/books.xml"
     assert_equal( uri, @r.to_uri.to_s )
   end
 end
