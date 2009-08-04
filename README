@@ -5,16 +5,16 @@ API over HTTP.
 
 == Description:
 
-The library provides a uniform frontend for building queries and sending
-them over HTTP (sync or async). When the api server returns a result for
+The library provides a uniform front-end for building queries and sending
+them over HTTP (sync or async). When the API server returns a result for
 the query, the library turns that result into ruby objects.
 
 == Features:
 
-* build queries and send them to the api (via HTTP GET)
-* parse XML result returned by the api and turn it into ruby objects
+* build queries and send them to the API (via HTTP GET)
+* parse XML result returned by the API and turn it into ruby objects
 * ...
-* api key management class (planed)
+* API key management class (planed)
 
 As the API of ISBNdb.com is only available over HTTP by now, this library
 only implements the HTTP version (the API spec speaks of a planed
@@ -39,8 +39,8 @@ Put the content of lib directory into your load path.
 
 Since the amount of requests to the API server is limited on a per day
 basis of 2000 requests, and results returned by the server are
-pagineted (and so require an additional query) there is a sane default
-value that determins how many pages of the result will be parsed.
+paginated (and so require an additional query) there is a sane default
+value that determines how many pages of the result will be parsed.
 
 As an alternative interactive parsing of the individual pages of the
 result is a potential feature for the future.
@@ -63,7 +63,7 @@ Some examples for using the library:
     result.each { |item|
       puts "Title: #{item.title}"
       puts "Full Title: #{item.full_title}"
-      puts "Auhtors: #{item.authors}"
+      puts "Authors: #{item.authors}"
       puts "ISBN-10: #{item.isbn10}"
     }
   end
