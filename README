@@ -38,7 +38,7 @@ Put the content of lib directory into your load path.
 == Details:
 
 Since the amount of requests to the API server is limited on a per day
-basis of 2000 requests, and results returned by the server are
+basis of 500 requests, and results returned by the server are
 paginated (and so require an additional query) there is a sane default
 value that determines how many pages of the result will be parsed.
 
