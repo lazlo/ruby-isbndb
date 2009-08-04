@@ -6,18 +6,20 @@ class BaseRequest
   DEFAULT_SERVER = 'isbndb.com'
   DEFAULT_PORT = 80
   DEFAULT_PATH = '/api/books.xml'
+  DEFAULT_QUERY = 'access_key=&index1=&value1='
 
-  attr_reader :scheme, :server, :port, :path
+  attr_reader :scheme, :server, :port, :path, :query
 
   def initialize
     @scheme = DEFAULT_SCHEME
     @server = DEFAULT_SERVER
     @port = DEFAULT_PORT
     @path = DEFAULT_PATH
+    @query = DEFAULT_QUERY
   end
 
   def to_uri
-    URI.parse("#{@scheme}://#{@server}:#{@port}#{@path}")
+    URI.parse("#{@scheme}://#{@server}:#{@port}#{@path}?#{@query}")
   end
 end
 end

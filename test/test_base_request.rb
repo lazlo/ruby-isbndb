@@ -12,6 +12,7 @@ class TestBaseRequest < Test::Unit::TestCase
     assert( @r.server )
     assert( @r.port )
     assert( @r.path )
+    assert( @r.query )
   end
 
   def test_default_scheme_is_set
@@ -30,8 +31,12 @@ class TestBaseRequest < Test::Unit::TestCase
     assert_equal( ISBNdb::BaseRequest::DEFAULT_PATH, @r.path )
   end
 
+  def test_default_query_is_set
+    assert_equal( ISBNdb::BaseRequest::DEFAULT_QUERY, @r.query )
+  end
+
   def test_defaults_to_uri
-    uri = "http://isbndb.com/api/books.xml"
+    uri = "http://isbndb.com/api/books.xml?access_key=&index1=&value1="
     assert_equal( uri, @r.to_uri.to_s )
   end
 end
