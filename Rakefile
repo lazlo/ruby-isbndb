@@ -16,4 +16,5 @@ Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_files.include('README')
   rdoc.rdoc_files.include('TODO')
   rdoc.rdoc_files.include('lib/*.rb')
+  rdoc.rdoc_files.include('lib/isbndb/*.rb')
 end
