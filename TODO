@@ -1,0 +1,20 @@
+= TODO
+
+* Frontend
+* [ ] find
+* [ ] API Key Scheduler
+* Query
+* [ ] Builder
+* Request
+* [ ] Client
+* Response
+* [ ] Base Query Response Parser
+* [ ] "auto-browse" result xml pages to a destinct amount
+* [ ] Key Stats Query Response Parser
+* [ ] Collection Query Response Parser
+* Collection Items
+* [ ] Book
+* [ ] Subject
+* [ ] Category
+* [ ] Author
+* [ ] Publisher
