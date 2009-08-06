@@ -14,6 +14,10 @@ class TestRequest < Test::Unit::TestCase
     assert_nil( @r.access_key )
   end
 
+  def test_default_response_fields
+    assert_equal( ISBNdb::Request::DEFAULT_RESPONSE_FIELDS, @r.response_fields )
+  end
+
   def test_default_scheme_is_set
     assert_equal( ISBNdb::Request::DEFAULT_SCHEME, @r.scheme )
   end
