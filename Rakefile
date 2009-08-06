@@ -1,5 +1,6 @@
 require 'rake/testtask'
 require 'rake/rdoctask'
+require 'rcov/rcovtask'
 
 task :default => :test
 
@@ -17,4 +18,10 @@ Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_files.include('TODO')
   rdoc.rdoc_files.include('lib/*.rb')
   rdoc.rdoc_files.include('lib/isbndb/*.rb')
+end
+
+Rcov::RcovTask.new(:coverage) do |t|
+  t.libs << "test"
+  t.test_files = FileList['test/test*.rb']
+  t.verbose = true
 end
