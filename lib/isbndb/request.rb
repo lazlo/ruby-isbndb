@@ -1,7 +1,7 @@
 require 'uri'
 
 module ISBNdb
-  class BaseRequest
+  class Request
     COLLECTIONS = [:books, :subjects, :categories, :authors, :publishers]
 
     DEFAULT_COLLECTION = COLLECTIONS.first

@@ -1,7 +1,7 @@
 require 'rexml/document'
 
 module ISBNdb
-  class BaseResponse
+  class Response
 
     attr_reader :content
 
@@ -11,7 +11,7 @@ module ISBNdb
 
     def self.load_file(file)
       doc = REXML::Document.new(File.read(file))
-      BaseResponse.new(doc)
+      Response.new(doc)
     end
   end
 end
