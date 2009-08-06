@@ -6,17 +6,6 @@ class TestBaseRequest < Test::Unit::TestCase
     @r = ISBNdb::BaseRequest.new
   end
 
-  def test_defaults
-    assert( @r )
-    assert( @r.collection )
-    assert_nil( @r.access_key )
-    assert( @r.scheme )
-    assert( @r.server )
-    assert( @r.port )
-    assert( @r.path )
-    assert( @r.query )
-  end
-
   def test_default_collection_is_first_of_collections_available
     assert_equal( ISBNdb::BaseRequest::COLLECTIONS.first, @r.collection )
   end
