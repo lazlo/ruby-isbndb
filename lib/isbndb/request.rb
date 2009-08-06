@@ -11,7 +11,7 @@ module ISBNdb
     DEFAULT_PATH = '/api/books.xml'
     DEFAULT_QUERY = 'access_key=&index1=&value1='
 
-    attr_reader :collection
+    attr_reader :collection, :access_key
     attr_reader :scheme, :server, :port, :path, :query
 
     def initialize

@@ -9,6 +9,7 @@ class TestBaseRequest < Test::Unit::TestCase
   def test_defaults
     assert( @r )
     assert( @r.collection )
+    assert_nil( @r.access_key )
     assert( @r.scheme )
     assert( @r.server )
     assert( @r.port )
@@ -18,6 +19,10 @@ class TestBaseRequest < Test::Unit::TestCase
 
   def test_default_collection_is_first_of_collections_available
     assert_equal( ISBNdb::BaseRequest::COLLECTIONS.first, @r.collection )
+  end
+
+  def test_default_access_key_is_nil
+    assert_nil( @r.access_key )
   end
 
   def test_default_scheme_is_set
