@@ -1,5 +1,7 @@
+require 'isbndb/collection.rb'
+
 module ISBNdb
-  class Category
+  class Category < Collection
     # Arguments
     # * name
     # * category_id

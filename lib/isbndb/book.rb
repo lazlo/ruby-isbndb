@@ -1,5 +1,7 @@
+require 'isbndb/collection.rb'
+
 module ISBNdb
-  class Book
+  class Book < Collection
     # Arguments
     # * isbn
     # * title

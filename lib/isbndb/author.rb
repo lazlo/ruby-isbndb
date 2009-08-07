@@ -1,5 +1,7 @@
+require 'isbndb/collection.rb'
+
 module ISBNdb
-  class Author
+  class Author < Collection
     # Arguments
     # * name
     # * person_id
