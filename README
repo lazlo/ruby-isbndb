@@ -56,8 +56,8 @@ Some examples for using the library:
 
   api_key='FFOOBBAARR'
 
-  # Find a book by title (using ISBNdb.find):
-  result = ISBNdb.find("Test-driven",
+  # Find a book by ISBN
+  result = ISBNdb.find("0-321-49045-2",
     :access_key => api_key)
   if result.size > 0
     result.each { |item|
@@ -65,6 +65,16 @@ Some examples for using the library:
       puts "Full Title: #{item.full_title}"
       puts "Authors: #{item.authors}"
       puts "ISBN-10: #{item.isbn10}"
+    }
+  end
+
+  # Find a book by title (using ISBNdb.find):
+  result = ISBNdb.find(:collection => :book,
+    :where => {:title => "Test-driven"},
+    :access_key => api_key)
+  if result.size > 0
+    result.each { |item|
+      ...
     }
   end
 
