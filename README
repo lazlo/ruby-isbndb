@@ -1,5 +1,7 @@
 = ISBNdb
 
+NOTE: this project is inactive! please check out https://github.com/svargo/isbndb/ created by Seth Vargo.
+
 is a simple library written in Ruby for interaction with the {ISBNdb.com}[http://isbndb.com/]
 API over HTTP.
 
